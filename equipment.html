@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hydroinformatic & System Monitoring Lab - [Page Name]</title>
+<style>
+    body { font-family: Arial; margin:0; padding:0; background:#f4f7f9; color:#333; }
+    nav { background:#0077b6; display:flex; justify-content:space-between; align-items:center; padding:10px 20px; position: relative; }
+    nav .logo { display:flex; align-items:center; gap:15px; }
+    nav .logo img { height:60px; width:auto; }
+    nav .logo div { color:#fff; }
+    nav .logo div .title { font-size:18px; font-weight:bold; }
+    nav .logo div .subtitle { font-size:12px; font-weight:normal; line-height:1.2; }
+    nav ul { list-style:none; display:flex; gap:15px; margin:0; padding:0; }
+    nav ul li a { color:#fff; text-decoration:none; font-weight:bold; }
+    nav ul li a:hover { text-decoration:underline; }
+    .menu-toggle { display:none; font-size:24px; color:#fff; cursor:pointer; }
+
+    @media (max-width:768px){
+        nav ul { flex-direction:column; background:#0077b6; position:absolute; top:70px; right:0; width:200px; display:none; padding:10px 0; border-radius:0 0 0 5px; }
+        nav ul.show { display:flex; }
+        .menu-toggle { display:block; }
+    }
+
+    .section { padding:50px 20px; max-width:1200px; margin:auto; }
+    .section h3 { text-align:center; margin-bottom:30px; color:#0077b6; }
+    .activities, .card-container, .contact-info { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .activity, .card, .contact-card { background:#fff; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); padding:20px; text-align:center; transition:0.3s; }
+    .activity img, .card img { width:100%; height:160px; object-fit:cover; border-radius:10px; margin-bottom:15px; }
+    .activity h4, .card-content h4, .contact-card h4 { color:#0077b6; margin-bottom:10px; font-size:16px; }
+    .card-content { padding:15px; }
+    .card-content p { font-size:14px; line-height:1.5; }
+    .card-content a { color:#0077b6; text-decoration:none; font-weight:bold; }
+    .card-content a:hover { text-decoration:underline; }
+    .card:hover, .activity:hover { transform:translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.2); }
+    form { background:#fff; padding:30px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); max-width:600px; margin:auto; }
+    form input, form textarea { width:100%; padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc; }
+    form button { background:#0077b6; color:#fff; padding:12px 20px; border:none; border-radius:5px; cursor:pointer; font-weight:bold; }
+    form button:hover { background:#005f87; }
+    footer { background:#0077b6; color:#fff; text-align:center; padding:20px; margin-top:50px; }
+
+    /* Hero Section for Home */
+    .hero { background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat; height:400px; display:flex; align-items:center; justify-content:center; color:#fff; text-shadow:1px 1px 5px #000; text-align:center; padding:0 20px;}
+    .hero h2 { font-size:34px; max-width:900px; }
+    .tagline { font-size:18px; margin-top:15px; font-style:italic; }
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="UNNES.png" alt="UNNES Logo">
+        <div>
+            <div class="title">Hydroinformatic and System Monitoring Laboratory</div>
+            <div class="subtitle">Department of Civil Engineering, Faculty of Engineering<br>Universitas Negeri Semarang</div>
+        </div>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="member.html">Member</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publication.html">Publication</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="data.html">Open Data</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<script>
+function toggleMenu() {
+    document.getElementById('nav-links').classList.toggle('show');
+}
+</script>
+
+<section class="section">
+    <h3>Lab Equipment & Facilities</h3>
+    <div class="card-container">
+        <div class="card">
+            <img src="irigation.jpg" alt="Wave Flume">
+            <div class="card-content">
+                <h4>Wave Flume</h4>
+                <p>Experimental setup for generating and observing wave dynamics in controlled conditions.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="irigation.jpg" alt="River Flume">
+            <div class="card-content">
+                <h4>River Flume</h4>
+                <p>Simulates river flow for hydrodynamics experiments and sediment transport studies.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="drone1.jpg" alt="Drone">
+            <div class="card-content">
+                <h4>Drone</h4>
+                <p>Used for aerial observation, field mapping, and monitoring water resources.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="irigation.jpg" alt="X-Band Radar">
+            <div class="card-content">
+                <h4>X-Band Radar</h4>
+                <p>High-resolution radar system for coastal and river hydrodynamic measurements.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="drone1.jpg" alt="LiDAR">
+            <div class="card-content">
+                <h4>LiDAR & Multispectral Camera</h4>
+                <p>Remote sensing for topography, vegetation, and environmental mapping.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="irigation.jpg" alt="Camera Surveillance">
+            <div class="card-content">
+                <h4>Camera Surveillance</h4>
+                <p>Field monitoring with visual recordings to support experiments and hydrological studies.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="drone1.jpg" alt="Electronic Instruments">
+            <div class="card-content">
+                <h4>Electronic Instruments & IoT</h4>
+                <p>Various sensors and IoT devices for real-time monitoring of water and environmental parameters.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Hydroinformatics & System Monitoring Laboratory - Universitas Negeri Semarang
+</footer>
+</body>
+</html>
