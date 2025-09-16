@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hydroinformatic and System Monitoring Laboratory</title>
+<style>
+body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f7f9; color:#333; }
+nav { background:#0077b6; padding:10px 20px; display:flex; justify-content:space-between; align-items:center; position: relative; }
+nav .logo { display:flex; align-items:center; gap:15px; }
+nav .logo img { height:90px; width:auto; }
+nav .logo div h1 { margin:0; font-size:20px; color:#fff; }
+nav .logo div span { font-size:14px; font-weight:normal; color:#fff; }
+nav ul { list-style:none; display:flex; gap:20px; margin:0; padding:0; }
+nav ul li a { color:#fff; text-decoration:none; font-weight:bold; }
+nav ul li a:hover { text-decoration:underline; }
+.menu-toggle { display:none; font-size:28px; color:#fff; cursor:pointer; }
+
+@media (max-width:768px){
+    nav ul { flex-direction:column; background:#0077b6; position:absolute; top:110px; right:0; width:220px; display:none; padding:10px 0; border-radius:0 0 0 5px; }
+    nav ul.show { display:flex; }
+    .menu-toggle { display:block; }
+}
+
+.hero { background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat; height:400px; display:flex; align-items:center; justify-content:center; color:#fff; text-shadow:1px 1px 5px #000; text-align:center; padding:0 20px;}
+.hero h2 { font-size:34px; max-width:900px; }
+.tagline { font-size:18px; margin-top:15px; font-style:italic; }
+.section { padding:50px 20px; max-width:1200px; margin:auto; }
+.section h3 { text-align:center; margin-bottom:30px; color:#0077b6; font-size:28px; }
+.section p { text-align:center; max-width:900px; margin:auto; line-height:1.6; }
+.activities { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:30px; margin-top:40px; }
+.activity { background:#fff; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); padding:20px; text-align:center; }
+.activity img { width:100%; height:160px; object-fit:cover; border-radius:10px; margin-bottom:15px; }
+.activity h4 { color:#0077b6; margin-bottom:10px; font-size:20px; }
+footer { background:#0077b6; color:#fff; text-align:center; padding:20px; margin-top:50px; font-size:14px; }
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="UNNES.png" alt="UNNES Logo">
+        <div>
+            <h1>Hydroinformatic and System Monitoring Laboratory</h1>
+            <span>Department of Civil Engineering, Faculty of Engineering<br>Universitas Negeri Semarang</span>
+        </div>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="member.html">Member</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publication.html">Publication</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="data.html">Open Data</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<script>
+function toggleMenu() {
+    document.getElementById('nav-links').classList.toggle('show');
+}
+</script>
+
+<section class="hero">
+    <div>
+        <h2>Hydroinformatic and System Monitoring Laboratory</h2>
+        <p class="tagline">Field Observation System for Data Learning, Numerical and Experimental Model</p>
+    </div>
+</section>
+
+<section class="section">
+    <h3>About Our Laboratory</h3>
+    <p>
+        The Hydroinformatic and System Monitoring Laboratory integrates remote sensing, sensor technology, IoT, and drones for real-time observation of water resources and the environment. 
+        Field data collected is not only used for monitoring but also validated and integrated into numerical modeling and laboratory experiments. 
+        The laboratory serves as a research hub supporting various applications, ranging from water resource management and disaster mitigation 
+        to the development of smart monitoring systems.
+    </p>
+</section>
+
+<section class="section">
+    <h3>Our Activities</h3>
+    <div class="activities">
+        <div class="activity">
+            <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=800&q=80" alt="Field Observation">
+            <h4>Field Observation & Monitoring</h4>
+            <p>Using drones, IoT sensors, and environmental instruments to monitor rivers, reservoirs, coasts, and other water resources.</p>
+        </div>
+        <div class="activity">
+            <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?auto=format&fit=crop&w=800&q=80" alt="Data Integration">
+            <h4>Data Integration & Modeling</h4>
+            <p>Analyzing field data to validate numerical models and laboratory experiments for accurate and reliable insights.</p>
+        </div>
+        <div class="activity">
+            <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=800&q=80" alt="Experimental Studies">
+            <h4>Experimental Studies</h4>
+            <p>Conducting simulations and small-scale experiments to support hydrological and ecological research.</p>
+        </div>
+        <div class="activity">
+            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80" alt="Technology Development">
+            <h4>Technology Development</h4>
+            <p>Developing sensors, IoT systems, and real-time monitoring platforms for innovative applications.</p>
+        </div>
+        <div class="activity">
+            <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=800&q=80" alt="Collaborative Research">
+            <h4>Collaborative Research</h4>
+            <p>Supporting joint projects with industry, government, and other research institutions to advance data-driven solutions.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Hydroinformatic and System Monitoring Laboratory - Department of Civil Engineering, Faculty of Engineering, Universitas Negeri Semarang
+</footer>
+
+</body>
+</html>
