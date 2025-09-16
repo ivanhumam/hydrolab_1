@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hydroinformatics & System Monitoring Lab - Contact</title>
+<style>
+    body { font-family: Arial; margin:0; padding:0; background:#f4f7f9; color:#333; }
+    nav { background:#0077b6; display:flex; justify-content:space-between; align-items:center; padding:10px 20px; position: relative; }
+    nav .logo { display:flex; align-items:center; gap:15px; }
+    nav .logo img { height:60px; width:auto; }
+    nav .logo div { color:#fff; }
+    nav .logo div .title { font-size:18px; font-weight:bold; }
+    nav .logo div .subtitle { font-size:12px; font-weight:normal; line-height:1.2; }
+    nav ul { list-style:none; display:flex; gap:15px; margin:0; padding:0; }
+    nav ul li a { color:#fff; text-decoration:none; font-weight:bold; }
+    nav ul li a:hover { text-decoration:underline; }
+    .menu-toggle { display:none; font-size:24px; color:#fff; cursor:pointer; }
+    
+    @media (max-width:768px){
+        nav ul { flex-direction:column; background:#0077b6; position:absolute; top:70px; right:0; width:200px; display:none; padding:10px 0; border-radius:0 0 0 5px; }
+        nav ul.show { display:flex; }
+        .menu-toggle { display:block; }
+    }
+
+    .section { padding:50px 20px; max-width:1200px; margin:auto; }
+    .section h3 { text-align:center; margin-bottom:30px; color:#0077b6; }
+    .contact-info { display:flex; flex-wrap:wrap; justify-content:center; gap:40px; text-align:left; margin-bottom:40px; }
+    .contact-card { background:#fff; padding:20px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); width:300px; }
+    .contact-card h4 { color:#0077b6; margin-bottom:10px; }
+    form { background:#fff; padding:30px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); max-width:600px; margin:auto; }
+    form input, form textarea { width:100%; padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc; }
+    form button { background:#0077b6; color:#fff; padding:12px 20px; border:none; border-radius:5px; cursor:pointer; font-weight:bold; }
+    form button:hover { background:#005f87; }
+    footer { background:#0077b6; color:#fff; text-align:center; padding:20px; margin-top:50px; }
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="UNNES.png" alt="UNNES Logo">
+        <div>
+            <div class="title">Hydroinformatic and System Monitoring Laboratory</div>
+            <div class="subtitle">Department of Civil Engineering, Faculty of Engineering<br>Universitas Negeri Semarang</div>
+        </div>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="member.html">Member</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publication.html">Publication</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="data.html">Open Data</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<script>
+function toggleMenu() {
+    document.getElementById('nav-links').classList.toggle('show');
+}
+</script>
+
+<section class="section">
+    <h3>Contact & Collaboration</h3>
+    <div class="contact-info">
+        <div class="contact-card">
+            <h4>Laboratory Address</h4>
+            <p>Hydroinformatic and System Monitoring Laboratory<br>
+               Department of Civil Engineering, Faculty of Engineering<br>
+               Universitas Negeri Semarang (UNNES)<br>
+               Kampus Sekaran Gunungpati, Semarang 50229, Indonesia
+            </p>
+        </div>
+        <div class="contact-card">
+            <h4>Email & Phone</h4>
+            <p>Email: <a href="mailto:labhydro@unnes.ac.id">labhydro@unnes.ac.id</a><br>
+               Phone: +62 24 8508190 ext. 1234
+            </p>
+        </div>
+        <div class="contact-card">
+            <h4>Social Media</h4>
+            <p>LinkedIn: <a href="#">link</a><br>
+               ResearchGate: <a href="#">link</a><br>
+               Google Scholar: <a href="#">link</a>
+            </p>
+        </div>
+    </div>
+
+    <h3>Send Us a Message / Collaboration Inquiry</h3>
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Write your message here..." rows="6" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    &copy; 2025 Hydroinformatics & System Monitoring Laboratory - Universitas Negeri Semarang
+</footer>
+
+<script>
+function toggleMenu(){
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
+}
+</script>
+
+</body>
+</html>
